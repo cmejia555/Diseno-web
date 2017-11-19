@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<!-- 12/10/17: Estructura basica de un sitio web: header, nav, section, aside, footer -->
+<!-- 16/10/17: Listas, tablas, formularios, enlaces, imagenes -->
+<!-- 21/10/17: Atributos en meta, embeber videos, integracion CSS, google font y ionicons -->
+<!-- 24/10/17: margin, border, padding, imagen de fondo, posicionamiento-->
+<!-- 01/11/17: flexbox, -->
+<html>
+    <head>
+        <meta charset="utf-8" />   <!-- las etiquetas como meta no tienen tag de cierre -->
+        
+        <meta name="description" content="Sitio dedicado exclusivo al cuidado de perros, con todo el amor que se merecen"/>
+        <meta name="keywords" content="mascotas; perros; caninos; animales;" />
+        
+        <title>Mi portfolio</title> <!-- titulo de la solapa en la pagina web -->
+
+        <link href="normalize.css" rel="stylesheet" type="text/css" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        
+        <!-- Google fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" type="text/css" />
+        <!-- Ionicons http://ionicons.com/ -->
+        <link href="ionicons-2.0.1/css/ionicons.css" rel="stylesheet" type="text/css" />
+    </head>
+    
+    <body>
+        <header class="cabeza"> <!-- cabecera -->
+            <div class="top"> <!-- datos top -->
+                <ul>
+                    <li class="tel"><i class="ion-ios-telephone"></i>49234857</li>
+                    <li class="mail"><i class="ion-email"></i>cesarmejia555@yahoo.com.ar</li>
+                    <li class="ingresar"><a class="button" href="#">Ingresar</a></li>
+                </ul>
+            </div>
+        </header>    
+        
+        <nav> <!-- menu de navegacion -->
+            <ul class="menu"> <!-- lista desordenada -->
+                <li class="logo"><a href="#">LOGO</a></li>
+                <li class="list li_home"><i class="ion-home"></i><a href="#home">inicio</a></li>
+                <li class="list li_nosotros"><i class="ion-person"></i><a href="#nosotros">nosotros</a></li>
+                <li class="list li_fotos"><i class="ion-images"></i><a href="#fotos">fotos</a></li>
+                <li class="list li_contacto"><i class="ion-email"></i><a href="#contacto">contacto</a></li>
+            </ul>
+        </nav>
+        
+        
+        <section class="inicio">
+            <h1 class="titulo">mascoteros</h1>            
+        </section>
+        
+        <section id="nosotros">
+            
+        </section>
+        
+        <section id="fotos">
+            <h2 class="">Galeria de fotos</h2>
+            <div class="contenedor">
+                <div class="caja img1">
+                    <img class="imagen1" src="../imagenes/pelu1.jpg" />
+                </div>
+                <div class="caja img2">
+                    <img class="imagen1" src="../imagenes/toby1.jpg" />
+                </div>
+                <div class="caja img3">
+                    <img class="imagen1" src="../imagenes/pelu2.jpg" />
+                </div>
+                <div class="caja img4">
+                    <img class="imagen1" src="../imagenes/toby2.jpg" />
+                </div>
+                <div class="caja img5">
+                    <img class="imagen1" src="../imagenes/oli1.jpg" />
+                </div>
+                <div class="caja img6">
+                    <img class="imagen1" src="../imagenes/oli2.jpg" />
+                </div>
+                <div class="caja img7">
+                    <img class="imagen1" src="../imagenes/oli3.jpg" />
+                </div>
+                <div class="caja img8">
+                    <img class="imagen1" src="../imagenes/gato.jpg" />
+                </div>
+            </div>
+        
+        </section>
+        <section> <!-- secciones de una pagina web -->
+            <header><h2>Mascotas</h2></header>
+            
+            <article>
+                <header><h3 class="heading3">Informacion sobre perros</h3></header>
+                <p class="ion-heart"> Texto de <span>prueba</span> para estilos de CSS.</p>
+                
+            </article>
+            <article>
+                <header><h3 class="heading3">Informacion sobre gatos</h3></header>
+                
+            </article>
+            
+            <article>                
+                <header><h3 class="heading3">Informacion</h3></header>
+
+                <table class="tablas"> <!-- Etiqueta para realizar una tabla -->
+                    <thead> <!-- Encabezado de la tabla -->
+                        <tr> <!-- fila 1-->
+                            <th>Nombre</th> <!-- columnas de la fila thead -->
+                            <th>Tipo</th>
+                            <th>Raza</th>
+                            <th>Comida</th>
+                        </tr>
+                    </thead>
+
+                    <tbody> <!-- cuerpo de la tabla -->
+                        <tr> <!-- fila 2 -->
+                            <td>Tobias</td> <!-- columnas del tbody -->
+                            <td>Mediano</td>
+                            <td>Cruza</td>
+                            <td>De todo</td>
+                        </tr>
+                        <tr> <!-- fila 3-->
+                            <td>Olivia</td>
+                            <td>Grande</td>
+                            <td>Galgo</td>
+                            <td>Pro Plan</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot> <!-- fin de la tabla -->
+                        <tr>
+                        <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+
+            <article>
+                <p>Para realizar una reserva, por favor complete el <a href="secciones/formulario.html" title="formulario">formulario de contacto</a></p>
+
+            </article>
+        </section>
+        
+        
+        <aside style="margin-bottom: 20px"> <!-- informacion no prescindible -->
+            <a href="https://facebook.com/" target="_blank">Seguinos en Facebook</a>
+            
+        </aside>
+        
+        <footer> <!-- pie de pagina -->
+            <div>Diseñado por Cesar Mejia</div>
+        </footer>
+        
+    </body>
+</html>
+
+<!-- Etiquetas de texto
+<i></i> italica
+<b></b> negrita
+<u></u> subrayado
+-->
+
+<!-- Etiquetas utiles
+<h1></h1> encabezados de 1 a 6 niveles de importancia
+<br /> salto de linea
+<hr /> separa texto con una linea
+
+<div></div> Agrupa elementos del tipo bloque
+<span></span> Agrupa un bloque DENTRO de otro, util dentro de parrafos
+<li></li> elementos de una lista
+-->
+
+<!-- atributos de tipo de entrada
+text: recibe texto
+password: no se ve la entrada
+checkbox: seleccion, no son excluyentes
+radio: excluyente
+submit: envia el formulario
+reset: borra los datos del formulario
+file: permite adjuntar archivos
+hidden: datos ocultos
+image: imagen
+button: boton
+-->
