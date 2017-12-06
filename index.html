@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<!-- 12/10/17: Estructura basica de un sitio web: header, nav, section, aside, footer -->
+<!-- 16/10/17: Listas, tablas, formularios, enlaces, imagenes -->
+<!-- 21/10/17: Atributos en meta, embeber videos, integracion CSS, google font y ionicons -->
+<!-- 24/10/17: margin, border, padding, imagen de fondo, posicionamiento-->
+<!-- 01/11/17: flexbox, -->
+<html>
+    <head>
+        <meta charset="utf-8" />   <!-- las etiquetas como meta no tienen tag de cierre -->
+        
+        <meta name="description" content="Sitio dedicado exclusivo al cuidado de perros, con todo el amor que se merecen"/>
+        <meta name="keywords" content="mascotas; perros; caninos; animales;" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive -->
+        
+        <title>Animalazos</title> <!-- titulo de la solapa en la pagina web -->
+
+        <link href="normalize.css" rel="stylesheet" type="text/css" />
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous" />
+
+        <link href="estilos.css" rel="stylesheet" type="text/css" />
+        
+        <!-- Google fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" type="text/css" />
+        <!-- Ionicons http://ionicons.com/ -->
+        <link href="ionicons-2.0.1/css/ionicons.css" rel="stylesheet" type="text/css" />
+    </head>
+    
+    <body>
+        <header class="cabeza"> <!-- cabecera -->
+            <div class="top"> <!-- datos top -->
+                <ul>
+                    <li class="tel"><i class="ion-ios-telephone"></i>49234857</li>
+                    <li class="mail"><i class="ion-email"></i>cesarmejia555@yahoo.com.ar</li>
+                    <li class="ingresar"><a class="button" href="#">Ingresar</a></li>
+                </ul>
+            </div>
+            <nav> <!-- menu de navegacion -->
+                <ul class="nav-ul container-fluid row"> <!-- lista desordenada -->
+                    <li class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4"><a href="#">LOGO</a></li>
+                    <li class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-12"><i class="ion-home"></i><a href="#home">inicio</a></li>
+                    <li class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-12"><i class="ion-person"></i><a href="#nosotros">nosotros</a></li>
+                    <li class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-12"><i class="ion-images"></i><a href="#fotos">fotos</a></li>
+                    <li class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-12"><i class="ion-email"></i><a href="#contacto">contacto</a></li>
+                </ul>
+            </nav>
+        </header>    
+        
+        
+        <section class="inicio">
+            <div>
+                <h1 class="titulo">Animalazos</h1>
+                <img class="imagen10" src="imagenes/can1.jpg" />
+            </div>
+        </section>
+        
+        <section id="nosotros">
+            
+        </section>
+        
+        <section id="fotos">
+            <h2 class="">Galeria de fotos</h2>
+            <div class="contenedor">
+                <div class="caja img1">
+                    <img class="imagen1" src="../imagenes/pelu1.jpg" />
+                </div>
+                <div class="caja img2">
+                    <img class="imagen1" src="../imagenes/toby1.jpg" />
+                </div>
+                <div class="caja img3">
+                    <img class="imagen1" src="../imagenes/pelu2.jpg" />
+                </div>
+                <div class="caja img4">
+                    <img class="imagen1" src="../imagenes/toby2.jpg" />
+                </div>
+                <div class="caja img5">
+                    <img class="imagen1" src="../imagenes/oli1.jpg" />
+                </div>
+                <div class="caja img6">
+                    <img class="imagen1" src="../imagenes/oli2.jpg" />
+                </div>
+                <div class="caja img7">
+                    <img class="imagen1" src="../imagenes/oli3.jpg" />
+                </div>
+                <div class="caja img8">
+                    <img class="imagen1" src="../imagenes/gato.jpg" />
+                </div>
+            </div>
+        
+        </section>
+        <section> <!-- secciones de una pagina web -->
+            <header><h2>Mascotas</h2></header>
+            
+            <article>
+                <header><h3 class="heading3">Informacion sobre perros</h3></header>
+                <p class="ion-heart"> Texto de <span>prueba</span> para estilos de CSS.</p>
+                
+            </article>
+            <article>
+                <header><h3 class="heading3">Informacion sobre gatos</h3></header>
+                
+            </article>
+            
+            <article>                
+                <header><h3 class="heading3">Informacion</h3></header>
+
+                <table class="tablas"> <!-- Etiqueta para realizar una tabla -->
+                    <thead> <!-- Encabezado de la tabla -->
+                        <tr> <!-- fila 1-->
+                            <th>Nombre</th> <!-- columnas de la fila thead -->
+                            <th>Tipo</th>
+                            <th>Raza</th>
+                            <th>Comida</th>
+                        </tr>
+                    </thead>
+
+                    <tbody> <!-- cuerpo de la tabla -->
+                        <tr> <!-- fila 2 -->
+                            <td>Tobias</td> <!-- columnas del tbody -->
+                            <td>Mediano</td>
+                            <td>Cruza</td>
+                            <td>De todo</td>
+                        </tr>
+                        <tr> <!-- fila 3-->
+                            <td>Olivia</td>
+                            <td>Grande</td>
+                            <td>Galgo</td>
+                            <td>Pro Plan</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot> <!-- fin de la tabla -->
+                        <tr>
+                        <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+
+            <article>
+                <p>Para realizar una reserva, por favor complete el <a href="secciones/formulario.html" title="formulario">formulario de contacto</a></p>
+
+            </article>
+        </section>
+        
+        
+        <aside style="margin-bottom: 20px"> <!-- informacion no prescindible -->
+            <a href="https://facebook.com/" target="_blank">Seguinos en Facebook</a>
+            
+        </aside>
+        
+        <footer> <!-- pie de pagina -->
+            <div>Diseñado por Cesar Mejia</div>
+        </footer>
+        
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    </body>
+</html>

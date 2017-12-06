@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@import url("http://fonts.googleapis.com/css?family=Driod+Sans");
+/* para a├▒adir stylos de google font */
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  /* elimina el subrayado */ }
+
+a:hover {
+  text-decoration: none; }
+
+/* MIXINS */
+header div {
+  background-color: darkgreen;
+  max-width: 100%;
+  padding: 6px; }
+  header div ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    header div ul li {
+      color: whitesmoke;
+      font-size: 15px;
+      font-family: cursive; }
+    header div ul .tel {
+      flex: 1;
+      position: relative;
+      left: 10px; }
+    header div ul .mail {
+      flex: 5; }
+    header div ul .ingresar {
+      flex: 2;
+      text-align: center; }
+      header div ul .ingresar a {
+        background-color: inherit;
+        padding: 1px 6px;
+        font-size: inherit;
+        color: inherit;
+        border-radius: 3px;
+        border: solid 1px whitesmoke;
+        margin: 0px; }
+header nav {
+  /*display: none;*/ }
+  header nav .nav-ul {
+    margin: 0px;
+    padding: 15px;
+    background-color: azure; }
+
+section div {
+  position: relative;
+  height: 100vh; }
+  section div h1 {
+    position: absolute;
+    color: aliceblue;
+    width: 100%;
+    text-align: center; }
+  section div img {
+    width: 100%;
+    height: 100%; }
+
+/*# sourceMappingURL=estilos.css.map */
