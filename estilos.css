@@ -66,10 +66,34 @@ header nav {
 
 .section-2 div {
   height: 100vh; }
-  .section-2 div a .set-icon {
+  .section-2 div div h3 {
+    color: dimgrey;
+    font-size: 40px;
+    font-family: cursive; }
+  .section-2 div div .text-1 {
+    top: 35%;
+    left: 55%; }
+  .section-2 div div .text-2 {
+    top: 35%;
+    left: 45%; }
+  .section-2 div div .text-3 {
+    width: 100%;
+    left: 20px;
+    top: 100px; }
+  .section-2 div a span {
     width: 40px;
     height: 40px;
     background-color: black;
     opacity: 0.7; }
+
+.section-3 {
+  background-color: darkcyan;
+  text-align: center; }
+  .section-3 h2 {
+    font-size: 40px;
+    padding: 1.2rem; }
+  .section-3 div .set-img {
+    padding-left: 0px;
+    padding-right: 0px; }
 
 /*# sourceMappingURL=estilos.css.map */
