@@ -80,6 +80,14 @@ header {
             width: 100%;
             text-align: center;
         }
+        p {
+            position: absolute;
+            width: 100%;
+            color: aliceblue;
+            font-size: 20px;
+            text-align: center;
+            top: 50px;
+        }
         img {
             width: 100%;
             height: 100%;
@@ -138,15 +146,55 @@ header {
 
 .section-4 {
     background-color: white;
+    height: 100vh;
     h3 {
+        padding: 20px;
         text-align: center;
         width: 100%;
     }
     div {
-        height: 100vh;
+        max-width: 90%;
+        margin: auto;
+        .map {
+            float: left;
+            justify-content: center;
+            align-content: center;
+            margin-top: 80px;
+        }
+        form {
+            float: right;
+            padding-top: 20px;
+            label {
+                padding-top: 2px;
+                padding-bottom: 2px;
+            }
+            textarea {
+                margin-top: 20px;
+            }
+            .enviar {
+                margin-top: 20px;
+                float: right;
+            }
+        }
+        
+    } 
+}
+
+footer {
+    background-color: black;
+    color: white;
+    div {
+        
+        padding: 10px;
         max-width: 80%;
         margin: auto;
-
+        ul {
+            text-align: center;
+            li {
+                padding-left: 10px;
+                padding-right: 10px;
+                display: inline;
+            }
+        }
     }
-    
 }

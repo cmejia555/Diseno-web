@@ -51,6 +51,7 @@
         <section id="inicio" class="section-1">
             <div>
                 <h1 class="titulo">Animalazos</h1>
+                <p>No busques mas lugares, con nosotros tu mascota va a tener todo el amor que se merece.<span>Reserva tu lugar</span></p>
                 <img class="" src="imagenes/can1.jpg" alt="foto portada"/>
             </div>
         </section>
@@ -98,77 +99,55 @@
                 <img class="set-img col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" src="imagenes/night-animal-dog-pet.jpg" />
                 <img class="set-img col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" src="imagenes/pexels-photo-69372.jpeg" />
                 <img class="set-img col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" src="imagenes/weimaraner-puppy-dog-snout-97082.jpeg" />
-             <!--   <div class="caja img1">
-                    <img class="imagen1" src="../imagenes/pelu1.jpg" />
-                </div>
-                <div class="caja img2">
-                    <img class="imagen1" src="../imagenes/toby1.jpg" />
-                </div>
-                <div class="caja img3">
-                    <img class="imagen1" src="../imagenes/pelu2.jpg" />
-                </div>
-                <div class="caja img4">
-                    <img class="imagen1" src="../imagenes/toby2.jpg" />
-                </div>
-                <div class="caja img5">
-                    <img class="imagen1" src="../imagenes/oli1.jpg" />
-                </div>
-                <div class="caja img6">
-                    <img class="imagen1" src="../imagenes/oli2.jpg" />
-                </div>
-                <div class="caja img7">
-                    <img class="imagen1" src="../imagenes/oli3.jpg" />
-                </div>
-                <div class="caja img8">
-                    <img class="imagen1" src="../imagenes/gato.jpg" />
-                </div>-->
             </div>
         </section>
         
         <section id="contacto" class="section-4"> <!-- secciones de una pagina web -->
+            <h3>Contacto</h3>
             <div>
-                <h3>Contacto</h3>
-                <form action="" method="post"> <!-- formularios -->
+                <form action="" method="post" class="col-xl-6"> <!-- formularios -->
                     <fieldset> <!-- separacion de campos -->
                         <legend>Datos personales</legend> <!-- titulo del campo -->
                         
-                        <label for="nombre">Nombre</label>
-                        <input name="nombre" type="text" placeholder="Ingrese su nombre y apellido" required id="nombre"/>
+                        <label for="nombre" class="col-xl-12" >Nombre</label>
+                        <input name="nombre" class="col-xl-12" type="text" placeholder="Ingrese su nombre y apellido" required id="nombre"/>
 
                         <label for="tel">Teléfono</label>
-                        <input name="tel" type="number" required id="tel" />
+                        <input name="tel" class="col-xl-12" type="number" required id="tel" />
 
                         <label for="email">E-mail:</label>
-                        <input name="email" type="email" placeholder="Acá va tu email" required id="email" />
+                        <input name="email" class="col-xl-12" type="email" placeholder="Acá va tu email" required id="email" />
 
                         <label for="asunto">Asunto</label>
-                        <input name="asunto" type="text"  placeholder="Reservas, Adopciones, Informacion" required id="asunto" />
+                        <input name="asunto" class="col-xl-12" type="text"  placeholder="Reservas, Adopciones, Informacion" required id="asunto" />
 
                         <!--<label for="comentario">Escriba aqui tus comentarios</label><br />-->
-                        <textarea name="mensaje" id="comentario" placeholder="Escriba aqui su comentario" id="mensaje"></textarea>
+                        <textarea name="mensaje" class="col-xl-12" id="comentario" placeholder="Escriba aqui su comentario" id="mensaje"></textarea>
                     </fieldset>
                     
-                    <input type="submit" value="Enviar" />
+                    <input type="submit" value="Enviar" class="enviar"/>
                 </form>
             
-                <div class="map ">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.1670474986495!2d-58.43522340271324!3d-34.646264602530266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbbbdece7f1d%3A0x2b73db93eb7de6ec!2sAv.+Riestra+1750%2C+C1437HIT+CABA!5e0!3m2!1ses!2sar!4v1513001716718" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.1670474986495!2d-58.43522340271324!3d-34.646264602530266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbbbdece7f1d%3A0x2b73db93eb7de6ec!2sAv.+Riestra+1750%2C+C1437HIT+CABA!5e0!3m2!1ses!2sar!4v1513001716718" width="500" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
-            <article>
-                <p>Para realizar una reserva, por favor complete el <a href="secciones/formulario.html" title="formulario">formulario de contacto</a></p>
 
-            </article>
         </section>
         
         
-        <aside style="margin-bottom: 20px"> <!-- informacion no prescindible -->
-            <a href="https://facebook.com/" target="_blank">Seguinos en Facebook</a>
-            
-        </aside>
         
         <footer> <!-- pie de pagina -->
-            <div>Diseñado por Cesar Mejia</div>
+            <div>
+                <ul>
+                    <li class="tel"><i class="ion-ios-telephone"></i>49234857</li>
+                    <li class="mail"><i class="ion-email"></i>cesarmejia555@yahoo.com.ar</li>
+                    <li>Seguinos en:</li>
+                    <li><a href="https://facebook.com/" target="_blank" ><i class="ion-social-facebook"></i></a></li>
+                    <li><a href="" ><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="" ><i class="ion-social-instagram"></i></a></li>
+                </ul>
+            </div>
         </footer>
         
         
