@@ -46,7 +46,8 @@ header div {
         border: solid 1px whitesmoke;
         margin: 0px; }
 header nav {
-  /*display: none;*/ }
+  /*display: none;*/
+  /*position: fixed;*/ }
   header nav .nav-ul {
     margin: 0px;
     padding: 15px;
