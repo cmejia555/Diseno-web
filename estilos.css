@@ -97,4 +97,14 @@ header nav {
     padding-left: 0px;
     padding-right: 0px; }
 
+.section-4 {
+  background-color: white; }
+  .section-4 h3 {
+    text-align: center;
+    width: 100%; }
+  .section-4 div {
+    height: 100vh;
+    max-width: 80%;
+    margin: auto; }
+
 /*# sourceMappingURL=estilos.css.map */

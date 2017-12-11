@@ -126,30 +126,35 @@
         </section>
         
         <section id="contacto" class="section-4"> <!-- secciones de una pagina web -->
-            <h3>Contacto</h3>
-            <form action="" method="post"> <!-- formularios -->
-                <fieldset> <!-- separacion de campos -->
-                    <legend>Datos personales</legend> <!-- titulo del campo -->
-                    <label for="nombre">Nombre</label>
-                    <input name="nombre" type="text" placeholder="Ingrese su nombre y apellido" required id="nombre"/>
-                    
-                    <label for="tel">Teléfono</label>
-                    <input name="tel" type="number" required id="tel" />
+            <div>
+                <h3>Contacto</h3>
+                <form action="" method="post"> <!-- formularios -->
+                    <fieldset> <!-- separacion de campos -->
+                        <legend>Datos personales</legend> <!-- titulo del campo -->
+                        
+                        <label for="nombre">Nombre</label>
+                        <input name="nombre" type="text" placeholder="Ingrese su nombre y apellido" required id="nombre"/>
 
-                    <label for="email">E-mail:</label>
-                    <input name="email" type="email" placeholder="Acá va tu email" required id="email" />
-                    
-                    <label for="asunto">Asunto</label>
-                    <input name="asunto" type="text"  placeholder="Reservas, Adopciones, Informacion" required id="asunto" />
+                        <label for="tel">Teléfono</label>
+                        <input name="tel" type="number" required id="tel" />
 
-                    <!--<label for="comentario">Escriba aqui tus comentarios</label><br />-->
-                    <textarea name="mensaje" id="comentario" placeholder="Escriba aqui su comentario" id="mensaje"></textarea>
-                    
-                </fieldset>
+                        <label for="email">E-mail:</label>
+                        <input name="email" type="email" placeholder="Acá va tu email" required id="email" />
 
-                <input type="submit" value="Enviar" />
-            </form>
-     
+                        <label for="asunto">Asunto</label>
+                        <input name="asunto" type="text"  placeholder="Reservas, Adopciones, Informacion" required id="asunto" />
+
+                        <!--<label for="comentario">Escriba aqui tus comentarios</label><br />-->
+                        <textarea name="mensaje" id="comentario" placeholder="Escriba aqui su comentario" id="mensaje"></textarea>
+                    </fieldset>
+                    
+                    <input type="submit" value="Enviar" />
+                </form>
+            
+                <div class="map ">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.1670474986495!2d-58.43522340271324!3d-34.646264602530266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbbbdece7f1d%3A0x2b73db93eb7de6ec!2sAv.+Riestra+1750%2C+C1437HIT+CABA!5e0!3m2!1ses!2sar!4v1513001716718" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
             <article>
                 <p>Para realizar una reserva, por favor complete el <a href="secciones/formulario.html" title="formulario">formulario de contacto</a></p>
 
