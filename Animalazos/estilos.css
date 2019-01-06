@@ -1,0 +1,148 @@
+@charset "UTF-8";
+@import url("http://fonts.googleapis.com/css?family=Driod+Sans");
+/* para a├▒adir stylos de google font */
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  /* elimina el subrayado */ }
+
+a:hover {
+  text-decoration: none; }
+
+/* MIXINS */
+header div {
+  background-color: darkgreen;
+  max-width: 100%;
+  padding: 6px; }
+  header div ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    header div ul li {
+      color: whitesmoke;
+      font-size: 15px;
+      font-family: cursive; }
+    header div ul .tel {
+      flex: 1;
+      position: relative;
+      left: 10px; }
+    header div ul .mail {
+      flex: 5; }
+    header div ul .ingresar {
+      flex: 2;
+      text-align: center; }
+      header div ul .ingresar a {
+        background-color: inherit;
+        padding: 1px 6px;
+        font-size: inherit;
+        color: inherit;
+        border-radius: 3px;
+        border: solid 1px whitesmoke;
+        margin: 0px; }
+header nav {
+  /*display: none;*/
+  /*position: fixed;*/ }
+  header nav .nav-ul {
+    margin: 0px;
+    padding: 15px;
+    background-color: azure; }
+
+.section-1 div {
+  position: relative;
+  height: 100vh; }
+  .section-1 div h1 {
+    position: absolute;
+    color: aliceblue;
+    width: 100%;
+    text-align: center; }
+  .section-1 div p {
+    position: absolute;
+    width: 100%;
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+    top: 50px; }
+  .section-1 div img {
+    width: 100%;
+    height: 100%; }
+
+.section-2 div {
+  height: 100vh; }
+  .section-2 div div h3 {
+    color: dimgrey;
+    font-size: 40px;
+    font-family: cursive; }
+  .section-2 div div .text-1 {
+    top: 35%;
+    left: 55%; }
+  .section-2 div div .text-2 {
+    top: 35%;
+    left: 45%; }
+  .section-2 div div .text-3 {
+    width: 100%;
+    left: 20px;
+    top: 100px; }
+  .section-2 div a span {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    opacity: 0.7; }
+
+.section-3 {
+  background-color: darkcyan;
+  text-align: center; }
+  .section-3 h2 {
+    font-size: 40px;
+    padding: 1.2rem; }
+  .section-3 div .set-img {
+    padding-left: 0px;
+    padding-right: 0px; }
+
+.section-4 {
+  background-color: white;
+  height: 100vh; }
+  .section-4 h3 {
+    padding: 20px;
+    text-align: center;
+    width: 100%; }
+  .section-4 div {
+    max-width: 90%;
+    margin: auto; }
+    .section-4 div .map {
+      float: left;
+      justify-content: center;
+      align-content: center;
+      margin-top: 80px; }
+    .section-4 div form {
+      float: right;
+      padding-top: 20px; }
+      .section-4 div form label {
+        padding-top: 2px;
+        padding-bottom: 2px; }
+      .section-4 div form textarea {
+        margin-top: 20px; }
+      .section-4 div form .enviar {
+        margin-top: 20px;
+        float: right; }
+
+footer {
+  background-color: black;
+  color: white; }
+  footer div {
+    padding: 10px;
+    max-width: 80%;
+    margin: auto; }
+    footer div ul {
+      text-align: center; }
+      footer div ul li {
+        padding-left: 10px;
+        padding-right: 10px;
+        display: inline; }
+
+/*# sourceMappingURL=estilos.css.map */
