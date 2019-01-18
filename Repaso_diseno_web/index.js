@@ -8,5 +8,6 @@ handle["/"] = requestHandlers.sendHtml;
 handle["/index.html"] = requestHandlers.sendHtml;
 handle["/estilos.css"] = requestHandlers.sendCss;
 handle["/script.js"] = requestHandlers.sendJs;
+handle["/saveData"] = requestHandlers.save;
 
 server.init(router.route, handle);

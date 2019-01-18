@@ -37,18 +37,20 @@
 		<ion-icon name="md-heart" size="small"></ion-icon>
 		
 
-		<form action="" method="get">
+		<form name="myform" action="/saveData" onsubmit="" method="post" target=""> <!-- Si el form apunta al iframe no se recarga la pagina. El problema es que no se borran los datos del form!!!!!!!!!! -->
 			<fieldset>
 				<legend>Cesar</legend>
-				<input type="input" name="cesar" id="cesar"/>
-				<input type="text" name="text">
+				<input type="input" name="firstname" id="cesar"/>
+				<input type="text" name="lastname">
 				<input type="email" name="email">
-				<input type="submit" value="todos">
-				<input type="reset" name="reset">
+				<input type="submit" value="Enviar">
+				<input type="reset" name="Reset">
 			</fieldset>
 		</form>
 
-		
+
+		<iframe src="" name="request"></iframe> 
+
 		<audio src="">
 			<p>Tu navegador no implementa el elemento audio.</p>
 		</audio>
