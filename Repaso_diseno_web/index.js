@@ -1,6 +1,6 @@
-var server = require("./server.js"); // no es necesario la extension .js
-var router = require("./router.js");
-var requestHandlers = require("./requestHandlers.js");
+var server = require("./node_modules/server.js"); // no es necesario la extension .js
+var router = require("./node_modules/router.js"); // si es necesario ./xxx
+var requestHandlers = require("./node_modules/requestHandlers.js");
 
 
 var handle = {} //objeto vacio
