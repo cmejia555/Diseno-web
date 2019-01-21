@@ -1,0 +1,21 @@
+{
+  "name": "repaso_diseno_web",
+  "version": "1.0.0",
+  "description": "repaso de conceptos html, js, css",
+  "main": "index.js",
+  "dependencies": {
+    "mongodb": "^3.1.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "html",
+    "css",
+    "node"
+  ],
+  "author": "cesar mejia",
+  "license": "MIT"
+}
