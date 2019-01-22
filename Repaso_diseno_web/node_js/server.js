@@ -2,6 +2,8 @@ var http = require('http');
 var url = require("url");
 
 function initServer(route, handle) {
+	http.createServer(onRequest).listen(8000);
+	
 	function onRequest(request, response) {
 		var postData = "";
 		var pathname = url.parse(request.url).pathname;
@@ -24,8 +26,6 @@ function initServer(route, handle) {
 			});
 		}
 	}
-
-	http.createServer(onRequest).listen(8000);
 
 	console.log("Servidor Iniciado.");
 }
