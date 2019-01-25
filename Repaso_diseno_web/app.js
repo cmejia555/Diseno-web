@@ -10,6 +10,9 @@ const express = require('express'),
 
 const app = express();
 
+//app.use(express.static('src')); // Carga arcivos estaticos en el route "/"
+app.use('/static', express.static('src')) // Carga arcivos estaticos en el route "/static"
+
 
 // Carga middlewares, un metodo que se ejecuta antes que llegue a un controlador
 // bodyParser convierte el body de las peticiones a JSON

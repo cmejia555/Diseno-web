@@ -1,5 +1,9 @@
-'use strict'
+/*
+ * index.js: Conexion a la base de datos e inicializacion del servidor
+ */    
 
+
+'use strict'
 
 const app = require("./app.js"), // Modulo de configuracion de express
 	  mongoose = require("mongoose"), // Modulo para conectar a MongoDB
