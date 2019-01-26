@@ -2,28 +2,42 @@
 
 const UserModel = require("../models/userModel.js");
 
-function getUser(request, response, next) { // Metodo GET: devuelve todos los registros (documento)
-    // En GET se debe usar request.query para tener las peticiones parciadas en un objeto
-    UserModel.find(request.query, (err, registers) => {
+
+/*
+ * getUser(): Devuelve los registros de acuerdo al query 
+ * Ejemplo -> http://localhost:3000?name=cesar (name=cesar es la query)
+ */
+function getUser(request, response, next) {
+    UserModel.find(request.query, (err, registers) => { // request.query tiene peticiones parciadas en un objeto
         if(err){
             response.send(err);
         }
         response.json(registers);
     });
-    console.log('Send user(s)');        
-
+    console.log('Send user(s)');
 }
 
-function getUserById(request, response, next) { // Metodo GET: devuelve un registro (documento)
-    console.log('Send user by id');
-    console.log(request.params.id);
+/*
+ * getUserById(): Devuelve un registro de acuerdo al ID pedido
+ * Ejemplo -> http://localhost:3000/data/10  (/10 es el parametro)
+ */
+function getUserById(request, response, next) {
+    UserModel.findById(request.params.id, (err, register) => {
+        if(err) response.send(err);
 
-    response.send('Send user by id');
+        response.json(register);
+    });
+
+    console.log('Send user by id ' + request.params.id);
 }
 
-function postUser(request, response) { // Metodo POST: crea un registro (documento)
-    // En post el dato viene codificado: request.body es el objeto de los datos
-    let newUser = UserModel(request.body);
+
+/*
+ * postUser(): Crea un registro (documento)
+ * Ejemplo -> http://localhost:3000/data
+ */
+function postUser(request, response) {
+    let newUser = UserModel(request.body); // En post el dato viene codificado: request.body es el objeto de los datos
     newUser.save((err, register) => {
         if(err) response.send(err);
         response.json(register);
@@ -33,13 +47,32 @@ function postUser(request, response) { // Metodo POST: crea un registro (documen
     console.log('User created');
 }
 
-function putUser(request, response) { // Metodo PUT: actualiza un registro (documento)
-    response.send('User updated');
+/*
+ * putUser(): Actualiza un registro por el campo 'name'
+ * Ejemplo -> http://localhost:3000/data
+ */
+function putUser(request, response) {
+    UserModel.findOneAndUpdate({ name: request.body.name }, request.body, 
+        { new: true }, (err, register) => {
+            if(err) response.send(err);
+            response.json(register);
+    });
+    console.log('User updated ');
 }
 
-function deleteUser(request, response) { // Metodo DELETE: borra un registro (documento)
-    response.send('User deleted');
+/*
+ * deleteUser(): Elimina un registro por el campo 'name'
+ * Ejemplo -> http://localhost:3000/data
+ */
+function deleteUser(request, response) {
+    console.log(request.body.name);
+    UserModel.findOneAndDelete({ name: request.body.name }, (err, register) => {
+            if(err) response.send(err);
+            response.json(register);
+    });
+    console.log('User deleted ');
 }
+
 
 // Exportacion de los controladores para usar en "userRoute.js" (el enrutador)
 exports.getUser = getUser;

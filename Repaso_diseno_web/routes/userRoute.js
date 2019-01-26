@@ -9,7 +9,7 @@ const express = require('express'),
 router.get('/', userController.getUser);
 router.get('/:id', userController.getUserById);
 
-router.post('/saveData', userController.postUser);
+router.post('/', userController.postUser);
 
 router.put('/', userController.putUser);
 
