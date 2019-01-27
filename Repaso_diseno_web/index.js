@@ -7,7 +7,8 @@
 const app = require("./app.js"), // Modulo de configuracion de express
 	  mongoose = require("mongoose"), // Modulo para conectar a MongoDB
 	  port = 3000, // Puerto que va a escuchar el servidor ante las peticiones
-      uri = "mongodb://localhost:27017/firstdb";
+      //uri = "mongodb://localhost:27017/firstdb";
+      uri = "mongodb+srv://cmejia:20062013@cmejia-cluster-ov4ar.gcp.mongodb.net/test?retryWrites=true"
 
 
 mongoose.Promise = global.Promise; // Indica a Mongoose usar conexión con Promesas
