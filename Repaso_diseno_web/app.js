@@ -12,7 +12,7 @@ const express = require('express'),
 const app = express();
 
 // Carga de middlewares, un metodo que se ejecuta antes que llegue a un controlador
-app.use(express.static('src')); // Carga arcivos estaticos en el route "/"
+app.use(express.static('public')); // Carga arcivos estaticos en el route "/"
 
 app.use(bodyParser.urlencoded({ extended: false })); // bodyParser convierte el body de las peticiones POST a JSON
 app.use(bodyParser.json());
