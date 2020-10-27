@@ -1,10 +1,6 @@
-# Diseno-web
-Repositorio de diferentes paginas web puestas en practicas
+# Animalazos
 
-Animalazos:
-Primera pagina web creada en CODERHOUSE. Para visualizar la pagina entrar a: https://animalazos.000webhostapp.com
+Primer diseño web desarrollado en CoderHouse
 
-Cualquier sugerencia y/o critica me pueden escribir a cesarmejia555@yahoo.com.ar
-
-
-
+Esta pagina se encuentra hosteada en:
+* https://animalazos.000webhostapp.com
